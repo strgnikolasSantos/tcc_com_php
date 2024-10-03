@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>Recording Lifes</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Link para o CSS do Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link para o JavaScript do Bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Link para o seu CSS personalizado -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="body">
+    <!-- Barra de navegação -->
+    <nav class="navbar navbar-light bg-dark">
+        <a class="navbar-brand" href="login.html" style="color: aliceblue;">
+            <img src="img/logo.jfif" width="25" height="30" style="border-radius: 90px;" class="d-inline-block align-top" alt="">
+            Recording Lifes
+        </a>
+    </nav>
+
+    <div class="container-fluid mt-3">
+        <div class="row">
+            <!-- Seção de Título -->
+            <div class="col-sm-12 p-4">
+                <div id="Titulo">
+                    <br>
+                    <h3 class="name">Cadastro Responsável</h3>
+                    <br>
+                </div>
+            </div>
+            <!-- Coluna vazia para centralização -->
+            <div class="col-sm-3 p-2"></div>
+
+            <!-- Formulário de Cadastro -->
+            <div class="col-sm-6 p-2 bg-dark text-white">
+                <div class="forms">
+                    <form id="responsavelForm" class="row g-3" method="POST" action="cadResponsavel.php">
+                        <!-- Nome do Responsável -->
+                        <div class="col-md-6">
+                            <label for="nomeResponsavel" class="form-label">Nome Responsável</label>
+                            <input type="text" class="form-control" id="nomeResponsavel" name="nomeResponsavel" placeholder="Digite o nome" required>
+                        </div>
+
+                        <!-- Data de Nascimento -->
+                        <div class="col-md-6">
+                            <label for="nasciResponsavel" class="form-label">Data de Nascimento*</label>
+                            <input type="date" class="form-control" id="nasciResponsavel" name="nasciResponsavel" required>
+                        </div>
+
+                        <!-- Gênero -->
+                        <div class="col-md-6">
+                            <label for="generoResponsavel" class="form-label">Gênero</label>
+                            <select id="generoResponsavel" class="form-select" name="generoResponsavel" required>
+                                <option value="" selected>Selecione</option>
+                                <option value="Masculino">Masculino</option>
+                                <option value="Feminino">Feminino</option>
+                                <option value="Outro">Outro</option>
+                            </select>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="col-md-6">
+                            <label for="emailResponsavel" class="form-label">Email*</label>
+                            <input type="email" class="form-control" id="emailResponsavel" name="emailResponsavel" placeholder="Digite o email" required>
+                        </div>
+
+                        <!-- Senha -->
+                        <div class="col-md-6">
+                            <label for="pswResponsavel" class="form-label">Senha*</label>
+                            <input type="password" class="form-control" id="pswResponsavel" name="pswResponsavel" placeholder="Digite a senha" required>
+                        </div>
+
+                        <!-- Termos de Serviço -->
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                                <label class="form-check-label" for="gridCheck">
+                                    Concordo com os termos
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Botão de Enviar -->
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Cadastrar</button>
+                        </div>
+
+                        <!-- Exibição de Respostas -->
+                        <div id="resultado" class="col-12 text-warning mt-2"></div>
+                    </form>
+                </div>
+            </div>
+            <!-- Coluna vazia para centralização -->
+            <div class="col-sm-3 p-2"></div>
+        </div>
+    </div>
+    <br><br>
+</body>
+
+</html>

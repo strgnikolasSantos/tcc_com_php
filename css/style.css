@@ -1,0 +1,73 @@
+.forms{
+    color: rgb(170, 170, 170); 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.name{
+
+    color: rgb(0, 0, 0);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+    flex-direction: row;
+    flex: auto;
+    width: 200px;
+    height: 65px;
+}
+
+.cadDependente{
+    align-items: center;
+    text-align: justify;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-grow: initial;
+}
+
+.body{
+    background: url(../img); 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+
+
+.home{
+    display: flex;
+    flex-direction: column;
+    flex-grow:  2;
+    -ms-flex-align: center;
+    flex-wrap: initial;
+}
+
+.menus{
+    border-radius: 20%;
+    width: 75%;
+    align-items: center;
+    text-align: justify;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.eventos{
+    align-items: center;
+    text-align: justify;
+    flex-direction: column;
+    flex-grow: inherit;
+    border-radius: 90px;
+    font-size: medium;
+    padding: auto;
+
+}
+
+.fonts{
+    text-align: center;
+    text-decoration: double;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.imagemCenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}

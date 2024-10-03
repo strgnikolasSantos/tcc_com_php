@@ -1,0 +1,29 @@
+ .formsIni {
+    display: flex;
+    width: 400px;
+    gap: 10px;
+    flex-direction: column;
+ }
+.body{
+    background-image: url('img/background-site.jpg');
+}
+
+.formsMeio {
+    display: flex;
+    width: 400px;
+    gap: 10px;
+    flex-direction: row;
+ }
+
+.cabecalho {
+    display: flex; 
+    width: 10px;
+}
+
+.menu{
+    display: flex;
+    width: 400px;
+    flex-direction: row;
+    text-align: center;
+}
+
